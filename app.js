@@ -23,10 +23,10 @@ async function main () {
     // Using `-` as a wildcard for the `PROJECT_ID` will infer the project from
     // the account. The `ACCOUNT` value can be the `email` address or the
     // `unique_id` of the service account.
-    name: 'projects/experiment-lab-290806/serviceAccounts/experiment-lab-290806@appspot.gserviceaccount.com',  // TODO: Update placeholder value.
+    name: 'projects/[project-Id]/serviceAccounts/[service account name]]',  // TODO: Update placeholder value.
 
     resource: {
-        "payload": "{\"sub\": \"experiment-lab-290806@appspot.gserviceaccount.com\", \"aud\": \"vault/myrole\"}"
+        "payload": "{\"sub\": \"[service account]\", \"aud\": \"vault/[vault role]\"}"
     },
 
     auth: authClient,
